@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <tr>
+            <th>Roupa</th>
+            <th>Cor</th>
+            <th>Tamanho</th>
+            <th>Preço</th>
+            <th>Disponibilidade</th>
+        </tr>
+        <tr>
+            <td>Camiseta</td>
+            <td>Preta</td>
+            <td>M</td>
+            <td>R$70,00</td>
+            <td>Em Estoque</td>
+        </tr>
+        <tr>
+            <td>Calça Jeans</td>
+            <td>Azul</td>
+            <td>P</td>
+            <td>R$1600,00</td>
+            <td>Esgotado</td>
+        </tr>
+    </table>
+
+    <p>atalho emmet tabela: table>tr*3>td*5 (exemplo para tabela com 3 tr e 5 td em cada uma)</p>
+
+    <h2>Exemplo de tabela mais complexa</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Items</th>
+                <th scope="col">Expenditure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Donuts</th>
+                <td>3,000</td>
+            </tr>
+            <tr>
+                <th scope="row">Stationery</th>
+                <td>18,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Totals</th>
+                <td>21,000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

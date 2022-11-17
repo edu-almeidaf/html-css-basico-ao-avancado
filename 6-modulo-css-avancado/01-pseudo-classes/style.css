@@ -1,0 +1,35 @@
+p:first-child {
+    color: aquamarine;
+    /* O first-child estiliza o primeiro elemento de um conjunto de elementos irmãos */
+}
+
+p:last-child {
+    color: blueviolet;
+    /* O last-child estiliza o último elemento de um conjunto de elementos irmãos */
+}
+
+/*p:not(.padrao){
+    color: yellow;
+     O not exclui uma classe. Nesse exemplo, todos os elementos que não estão com a classe .padrao estão recebendo a cor de amarelo. 
+}*/
+
+li:nth-child(even) {
+    color: red;
+    /* Essa pseudo-classe seleciona elementos a partir da sua posição em um grupo de elementos irmãos. Ele já possui alguns parâmetros definidos. O parâmetro odd estiliza todos os elementos ímpares do conjunto, já o even estiliza os ímpares. O 3n estiliza os ítens de 3 em 3, e pode ser feito com qualquer número no lugar. Se eu deixar somente o número, por exemplo o 3, como parâmetro, ele vai estilizar somente o terceiro ítem.
+    
+    Eu posso estilizar também um intervalo de ítens, por exemplo: Para eu estilizar do segundo até o quinto ítem da lista, usarei a seguinte sintaxe:
+    
+    li:nth-child(n+2):nth-child(-n+5)
+
+    Existe também a pseudo-classe nth-last-child(), que faz a mesma coisa do nth-child, mas de baixo para cima. Se eu colocar 1 no parâmetro nesse caso, ele vai estilizar o último elemento de baixo para cima.
+    */
+}
+
+p:only-child {
+    color:chocolate;
+    /* O only-child estiliza somente o elemento do conjunto que não possui irmãos, nesse caso ele está estilizando o p que está sozinho na div, e a outra div ele não está estilizando, porque possui 2 p */
+}
+
+/* OBS: As pseudo-classes são baseadas na tag pai, por exemplo: Se tem 2 parágrafos numa div, a div será tag pai, então os elementos filhos dentro dela serão estilizados.*/
+
+

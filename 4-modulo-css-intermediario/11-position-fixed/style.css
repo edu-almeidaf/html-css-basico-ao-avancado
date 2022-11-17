@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 1500px;
+    padding-top: 67px;
+}
+
+header {
+    font-size: 24px;
+    background-color: lightskyblue;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    top: 0;
+}
+
+/* (Para os ítens abaixo do menu não ficarem escondidos atrás dele, é adicionado um padding para separá-los, para isso deve-se inspecionar o tamanho do elemento na tela com o dev tools, nesse caso a altura do elemento do header é de 27px, e como o ele ta com um padding de 20px, adiciona o padding top e o bottom (27 + 20 + 20), ficando com 67px no total. Aí para jogar o conteúdo para baixo, adiciona o padding top de 67px no body, porém ao adicionar essa propriedade, ele empurra também o header 67px para baixo, porque ele também está dentro do body. Aí para corrigir isso, se coloca no header o top: 0, para ele ficar corretamente no início da página.
+OBS: O position fixed, cria uma nova layer na frente do conteúdo principal igual o absolute, porém ele fica fixo na tela ao scroolar, é muito utilizado em menus) */

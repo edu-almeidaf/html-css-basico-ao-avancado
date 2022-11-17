@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, 150px); (É possível abreviar essas 2 propriedades em uma linha só, igual o exemplo abaixo*/
+    grid-template: repeat(4, 150px) / repeat(2, auto); /*(1° valor - linhas, 2º valor - colunas)*/
+    grid-gap: 5px 10px; /*(É o espaçamento entre as linhas e as colunas, sendo o primeiro valor das linhas e o segundo das colunas)*/
+    /*grid-column-gap: 15px;(É o espaçamento entre as colunas)
+    grid-row-gap: 15px; (É o espaçamento entre as linhas)*/
+}
+
+.container div{
+    border: 1px solid #000;
+    background-color: #8a2be2;
+    color: #fff;
+    font-size: 20px;
+}
+

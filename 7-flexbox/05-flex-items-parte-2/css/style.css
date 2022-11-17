@@ -1,0 +1,50 @@
+/* -------------FLEX-------------- */
+
+.flex-0 {
+    /* No flex: 0 -  grow = 0, flex-shrink = 1, flex-basis = 0 */
+    /* O flex 0 serve para evitar que todos os elementos filhos ocupem o espaço do container */
+    flex: 0;
+}
+
+.flex-1 {
+    /* No flex: 1 -  grow = 1, flex-shrink = 1, flex-basis = 0 */
+    /* O flex 1 serve para que todos os elementos ocupem o espaço do container */
+    flex: 1 1 100px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* -------------ORDER-------------- */
+
+/* O order serve para definir a ordem dos ítens, qual será ordenado em qual lugar. De padrão todos vem com order=0 */
+
+.item.item3 {
+    order: 1;
+    /* Nesse caso, o ítem 3 passará para a última posição, pois ele está com um grau de ordem maior */
+    /* Essa propriedade segue sempre o flex-direction */
+    /* Essas propriedades aceitam números negativos também */
+}
+
+/* -------------SELF-------------- */
+
+.align-self .item5 {
+    align-self: auto;
+}
+
+.align-self.start .item3 {
+    align-self: flex-start;
+}
+
+.align-self.end .item3 {
+    align-self: flex-end;
+}
+
+.align-self.center .item3 {
+    align-self: center;
+}
+
+.align-self.stretch .item3 {
+    align-self: stretch;
+}

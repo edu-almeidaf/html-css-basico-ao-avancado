@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+.elemento {
+    color: #fff;
+    font-size: 32px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.elemento-estatico {
+    position: static;
+    background-color: crimson;
+    /* (O position static já vem por padrão, e não dá para alterar a posição dele) */
+}
+
+.elemento-relativo {
+    position: relative;
+    left: 100px;
+    background-color: coral;
+    /* (Ele é relativo em relação ao lugar que ele foi criado na tela, sendo assim dá para movimentá-lo dentro dessa área a vontade) */
+}
+
+.elemento-absoluto {
+    position: absolute;
+    background-color: darkcyan;
+    left: 200px;
+    /* (Abaixo desse position absolute tem outro position static, o absolute cria uma nova camada por cima da camada principal, sobrepondo-a, sendo assim, o elemento que está abaixo acaba subindo e ocupando a camada de trás desse elemento na tela) */
+
+    /* (OBS: Como ele cria uma camada nova por cima da camada que estão os outros elementos, ele pode ser movimentado pela viewport (tela) toda) */
+}
+
+.elemento-relativo-com-filho {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(214, 212, 212);
+}
+
+.elemento-absoluto-com-pai {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: darkcyan;
+    /* (Para evitar que o position absolute se mova pela viewport (tela) toda, é criado um position relative como pai dele, aí o position absolute irá se movimentar apenas dentro da área do position relative pai) */
+}

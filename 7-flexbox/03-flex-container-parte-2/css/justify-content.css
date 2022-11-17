@@ -1,0 +1,31 @@
+.flex-start {
+    justify-content: flex-start;
+    /* Esse é o valor padrão, alinha os ítens da esquerda para a direita */
+}
+
+.flex-end {
+    justify-content: flex-end;
+    /*alinha os ítens da direita para a esquerda*/
+}
+
+/* Obs: Ele obedece o início da linha, então se eu mudar o flex-direction para row-reverse por exemplo, o flex-start será da direita para a esquerda e o flex-end será da esquerda para a direita */
+
+.center {
+    justify-content: center;
+    /*alinha os ítens ao centro*/
+}
+
+.space-between {
+    justify-content: space-between;
+    /* Distribui os ítens uniformemente em linha */
+}
+
+.space-around {
+    justify-content: space-around;
+    /* Distribui os ítens uniformemente em linha, mas com um espaço igual ao redor deles */
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+    /* Distribui os ítens uniformemente em linha, de forma que o espaço entre qualquer ítem e as bordas sejam iguais */
+}

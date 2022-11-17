@@ -1,0 +1,62 @@
+/* O grow define a capacidade de um flex-item de crescer se for necessário dentro do container */
+.grow-0 {
+    flex-grow: 0;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+/* Essa propriedade dá o grau de importância para ele se esticar para a linha, sendo 0 o menor e 3 o maior */
+
+.basis-auto {
+    flex-basis: auto;
+}
+
+.basis-0 {
+    flex-basis: 0;
+}
+
+.basis-100 {
+    flex-basis: 100px;
+}
+
+.basis-200 {
+    flex-basis: 200px;
+}
+
+.basis-300 {
+    flex-basis: 300px;
+}
+
+/* O basis força todo mundo a ficar do mesmo tamanho, quando todos estão com os mesmos valores, ficam iguais, porém dá para aumentar o de um elemento para ele ficar maior que os outros */
+
+.shrink .item{
+    width: 500px;
+}
+
+.shrink-2 {
+    flex-shrink: 2;
+}
+
+.shrink-3 {
+    flex-shrink: 3;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+/* O flex shrink define a capacidade dos elementos de se adaptarem ao tamanho do elemento pai. De padrão ele vem com o valor 1. Ex: Se eu tiver um container de 500px e 4 ítens de 250px, eles vão encolher para caber dentro do container, se estiver com o padrão 1 */
+
+.wrap {
+    flex-wrap: wrap;
+}

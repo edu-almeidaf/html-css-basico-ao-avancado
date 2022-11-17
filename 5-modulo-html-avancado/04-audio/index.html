@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <h1>Áudio</h1>
+    <!-- <audio src="audios/audio.mp3" controls autoplay preload="metadata"></audio> -->
+    <!-- O google chrome não permite o autoplay na tag de áudio, para usá-lo é necessário usar alguma biblioteca de javascript -->
+    <!-- Cada navegador pode aceitar uma extensão de áudio, o safari por exemplo, não aceita áudios no formato .ogg, portanto é sempre bom ter um fallback de áudios, pro navegador procurar a versão que ele tenha suporte, usando o comando abaixo: -->
+    <audio controls>
+        <source src="audios/audio.ogg" type="audio/ogg">
+        <source src="audios/audio.wav" type="audio/wav">
+        <source src="audios/audio.mp3" type="audio/mpeg">
+        <p>Seu navegador não tem suporte a tag áudio</p>
+    </audio>    
+</body>
+</html>

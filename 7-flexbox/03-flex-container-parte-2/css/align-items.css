@@ -1,0 +1,37 @@
+.container {
+    height: 130px;
+}
+
+.flex-start {
+    align-items: flex-start;
+    /* Alinha os ítens no começo da linha */
+}
+
+.flex-end {
+    align-items: flex-end;
+    /* Alinha os ítens no final da linha */
+}
+
+.center {
+    align-items: center;
+    /* Alinha os ítens no centro da linha */
+}
+
+.stretch {
+    align-items: stretch;
+    /* Alinha os ítens no começo da linha, mas estica o espaço até o final para preencher */
+}
+
+.baseline {
+    align-items: baseline
+}
+
+.baseline .item {
+    flex: 1;
+}
+
+.baseline .item:first-child {
+    padding-top: 20px;
+}
+
+/* O baseline faz os ítens sempre ficarem alinhados em uma linha central, mesmo que os espaçamentos de cada sejam diferentes */

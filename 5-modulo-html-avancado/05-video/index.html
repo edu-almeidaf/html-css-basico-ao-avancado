@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Videos</h1>
+    <!-- <video src="videos/video.mp4" controls muted loop poster="images/thumb.jpg" width="640" height="360"></video> -->
+    <!-- Para que o autoplay funcione no chrome, deve também estar habilitado o muted -->
+    <video controls width="300">
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.ogg" type="video/ogg">
+        <source src="videos/video.webm" type="video/webm">
+        <p>Esse navegador não tem suporte à tag vídeo</p>
+    </video>
+    <!-- O ideal é sempre upar o vídeo ou no youtube ou no vímeo e utilizar o iframe dele no nosso site, pois assim fica mais leve para o usuário -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Anatomia do pseudo-elemento:
+seletor::pseudo-elemento{
+    propriedade: valor;
+} */
+
+
+
+.first-letter::first-letter {
+    color: coral
+
+    /* Esse pseudo-elemento aplica a propriedade somente na primeira letra da tag. Essa propriedade não é aplicada para elementos com display inline. Ela pode ser aplicada em tags, classes e ids. */
+}
+
+.first-line::first-line {
+    color: chartreuse;
+}
+
+.first-line::first-letter{
+    color: red;
+}
+
+li::marker {
+    color: blue;
+    font-size: 24px;
+    /* Esse pseudo-elemento estiliza somente os marcadores de um determinado elemento.*/
+}
+
+h2::before {
+    content: "";
+    background: url(./lamborghini-huracan-Alexander-Migl-wikimedia-commons-960x540.jpg) center center no-repeat;
+    display: inline-block;
+    width: 960px;
+    height: 540px;
+}
+
+h2::after {
+    content: " Teste after";
+}

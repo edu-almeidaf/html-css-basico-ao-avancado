@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade media queries</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="#quemsomos">Quem Somos</a></li>
+                <li><a href="#ondeestamos">Onde Estamos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="painel">
+            <div class="info">
+                <h1>Um Filme do Batman</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem quaerat enim. Commodi voluptatem beatae quibusdam non, iste maiores! Eius, quae! Sit tenetur, dignissimos delectus quod iure facere molestiae nam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga officia vel iusto fugit, harum natus repudiandae quaerat, fugiat dolorum, cupiditate enim laboriosam quos. Provident unde rem impedit quibusdam distinctio!</p>
+            </div>
+
+            <div class="image">
+                <picture>
+
+                    <source srcset="./images/batman-pequena.jpg" media="(max-width: 600px)">
+
+                    <img src="./images/batman.jpg" alt="filme do batman">
+                    <!-- na tag picture, de padrão ele vai mostrar a imagem da tag img nas telas maiores que 600px e vai mostrar a imagem da tag source em telas com menos de 600px -->
+                </picture>
+            </div>
+        </section>    
+    </main>
+</body>
+</html>

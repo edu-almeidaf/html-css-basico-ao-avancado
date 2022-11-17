@@ -1,0 +1,46 @@
+.container {
+    height: 130px;
+    flex-wrap: wrap;
+}
+
+.flex-start .item,
+.flex-end .item,
+.center .item,
+.stretch .item {
+    flex: 1;
+}
+
+.flex-start {
+    align-content: flex-start;
+    /* Fica alinhado no topo do eixo transversal*/
+}
+
+.flex-end {
+    align-content: flex-end;
+    /* Fica alinhado no final do eixo transversal*/
+}
+
+.center {
+    align-content: center;
+    /* Fica alinhado no centro do eixo transversal*/
+}
+
+.stretch {
+    align-content: stretch;
+    /* As colunas se esticam até o final do eixo para ocupar o espaço que está sobrando*/
+}
+
+.space-between {
+    align-content: space-between;
+    /* Quebra o conteúdo e a outra parte fica no final, dando um espaço entre elas */
+}
+
+.space-around {
+    align-content: space-around;
+    /* Faz a mesma coisa que o between, mas com um espaço proporcional em todos os lados de cada elemento, sem ficar colado nas extremidades */
+}
+
+.space-evenly {
+    align-content: space-evenly;
+    /* Deixa um espaço uniforme entre todos os espaços das frases e as bordas */
+}

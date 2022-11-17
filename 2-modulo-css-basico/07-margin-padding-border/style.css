@@ -1,0 +1,24 @@
+/* Existem 4 formas de escrever o margin, são elas: */
+
+p {
+    /* margin: 30px; (aplica o margin a todos os lados igualmente no documento)
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px; (aplica o margin separado a cada lado) 
+
+    margin: 30px 15px 30px 15px; (coloca o margin em sentido horário a partir do topo "top, right, bottom, left") */
+
+    margin: 30px 15px; /*(dessa forma ele aplica o 30px em cima e em baixo, e o 15px na direita e na esquerda)*/
+    padding: 20px;
+    background-color: aquamarine; /*o padding serve para dar espaçamento interno, um "respiro" para o conteúdo, funciona da mesma forma que o margin em relação a formas de escrevê-lo*/
+    border: 20px solid orange;
+}
+
+h1 {
+    border-style: solid;
+    border-width: 20px;
+    border-color: green cyan orange blueviolet;
+    border-radius: 10px;
+}

@@ -1,0 +1,66 @@
+/* ---- ESTILOS GERAIS ---- */
+body {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+h1 {
+    color: #000;
+}
+
+.container {
+    background-color: lightgray;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* ---- ESTILOS ESPECÍFICOS ---- */
+
+.texto-centralizado-1 {
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+
+    text-align: center;
+    line-height: 250px;
+    /* (Para alinhar o texto verticalmente usando o line-height, é necessário colocar a mesma altura do height para centralizar. A desvantagem disso é que precisa ser um valor fixo, e normalmente é trabalhando com valores relativos, dificultando usar dessa forma e consequentemente ela não é a mais indicada para se utilizar) */
+}
+
+.texto-centralizado-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* (Ao colocar o top e o left em 50%, ele alinha da ponta do elemento pra frente ao centro, então ele não fica bem centralizado, aí o atributo transform faz o elemento retornar em relação a ele mesmo, nesse caso aplicando 50% também, e o valor negativo para ele retroceder. É possível usar o transform separado por translateY e translateX, porém essa versão do atributo é a short, então é preferível usar essa) */
+}
+
+.alinhado-margin-auto {
+    margin: auto;
+    display: block;
+/* (O margin auto vai pegar o espaço que sobra na tela e colocar metade de cada lado do conteúdo, porém somente deixando como auto nesse caso não funciona, pois o botão possui display inline por padrão, aí é necessário deixar o display como block) */
+}
+
+.alinhado-absolute {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* (Por padrão, o margin auto não funciona com o position absolute, aí a forma de contornar isso é zerando todos os pontos do elemento, aí o margin auto passa a valer) */
+}
+
+.container-text-align {
+    text-align: center;
+    /* (Nesse caso, o text align só funcionou para a imagem porque ele está aplicado na classe pai da div, se eu colocasse esse mesmo parâmetro na classe da imagem em si, ela não funcionaria) */
+}

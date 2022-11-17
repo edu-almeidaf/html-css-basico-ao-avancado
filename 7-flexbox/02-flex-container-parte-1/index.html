@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container: Direction, Wrap e Flow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex Container: Direction, Wrap e Flow</h1>
+
+    <section>
+        <h2>Direction</h2>
+        <!-- O direction organiza o sentido que o conteúdo deve ser apresentado na página, sendo row o padrão da esquerda para a direita, row reverse da direita para esquerda, column de cima para baixo em colunas e column-reverse de baixo para cima em colunas -->
+
+        <div class="container direction">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Wrap</h2>
+        <!-- No wrap, quando falta espaço na página para colocar os ítens lado a lado, ao invés de diminuir o tamanho deles, é mantido a proporção e os ítens passam para baixo na página. O wrap-reverse faz a mesma coisa, mas de baixo para cima -->
+
+        <div class="container wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Flow</h2>
+        <!-- O flow é uma junção do direction e do wrap -->
+
+        <div class="container flow">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+    </section>
+</body>
+</html>

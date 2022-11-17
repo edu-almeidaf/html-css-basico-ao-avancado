@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Milky';
+    src: url('../fonts/MilkyNice.otf'),
+    url('../fonts/MilkyNice.ttf')
+}
+
+h2 {
+    font-family: 'Milky', Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.profile {
+    text-align: center;
+}
+
+.fa-instagram {
+    color: #e20044;
+}
+
+.fa-instagram:hover {
+    color: #fc4447;
+}
+
+.fa-facebook {
+    color: dodgerblue;
+    
+}
+
+.fa-facebook:hover {
+    color: mediumblue;
+}
+
+.fa-linkedin {
+    color: midnightblue;
+}
+
+.fa-linkedin:hover {
+    color: indigo;
+}
+
+.fa-github-square {
+    color: darkslategray;
+}
+
+.fa-github-square:hover {
+    color: #000;
+}
+
+.fa-instagram, .fa-facebook, .fa-linkedin, .fa-github-square {
+    font-size: 50px;
+}
